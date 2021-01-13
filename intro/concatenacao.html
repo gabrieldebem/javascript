@@ -3,13 +3,27 @@
     <head>
         <title></title>
         <meta charset="UTF-8">
-        <script>
-            var nome = prompt('Digite seu nome')
-            var age = prompt('Digite a sua idade')
-            document.write('<h1>Olá ' + nome + ', tudo bem? Estou vendo aqui que você tem ' + age + ' anos!')
-        </script>
+        <style>
+            ul{
+                border: 1px solid grey;
+            }
+        </style>
+        
     </head>
     <body>
-    
+        <ul type="none">
+            <li>
+                
+            </li>
+        </ul>
+        <form action="script.js">
+            <h2>Seu nome aqui:</h2> <br>
+            <input type="text" id="name"> <br>
+
+            <h2>O presente que você quer dar:</h2> <br>
+            <input type="text" id="item"> <br>
+
+            <input type="submit" value="Pronto">
+        </form>
     </body>
 </html>
