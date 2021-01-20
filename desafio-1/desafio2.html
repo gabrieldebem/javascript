@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio: Barreira de Idade</title>
+</head>
+<body>
+    <h1>Essa página vai identificar sua faixa etária</h1>
+    
+    <script>
+        var age = prompt('Informe sua idade:')
+        age = parseFloat(age)
+
+        if(age < 0){
+            document.write('Are you fucking kidding me? Try again')
+        }
+        
+        if(age >= 0 && age <= 15){
+            document.write('Você é Criança')
+        }
+        
+        if(age >= 16 && age <= 30){
+            document.write('Você é Jovem')
+        }
+
+        if(age >= 31 && age <= 60){
+            document.write('Você é Adulto')
+        }
+        
+        if(age >= 60){
+            document.write('Você é Idoso')
+        }
+    </script>
+</body>
+</html>
