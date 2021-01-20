@@ -25,11 +25,15 @@
 
             alert('A nota média do aluno foi: ' + mediaAluno)
 
-            if(mediaAluno >= media && faltas <=limFaltas){
+            /*if(mediaAluno >= media && faltas <=limFaltas){
                 alert('Aluno aprovado')
             }else{
                 alert('Aluno reprovado')
-            }
+            } */
+
+            var result = (mediaAluno >= media && faltas <=limFaltas) ? 'Aprovado' : 'Reprovado'
+            alert(result)
+
         </script>
     </head>
     <body>
