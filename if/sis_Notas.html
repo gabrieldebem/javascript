@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <script>
+            var nota1 = prompt('Nota do primeiro trimestre')
+            var nota2 = prompt('Nota do segundo trimestre')
+            var nota3 = prompt('Nota do terceiro trimestre')
+
+            var media = prompt('Insira a nota média para aprovação na sua escola')
+
+            nota1 = parseFloat(nota1)
+            nota2 = parseFloat(nota2)
+            nota3 = parseFloat(nota3)
+            media = parseFloat(media)
+
+            var sum = nota1 + nota2 + nota3
+            var mediaAluno = sum /3
+
+            var faltas = prompt('Número de faltas do aluno')
+            faltas = parseFloat(faltas)
+
+            var limFaltas = 15.5
+
+            alert('A nota média do aluno foi: ' + mediaAluno)
+
+            /*if(mediaAluno >= media && faltas <=limFaltas){
+                alert('Aluno aprovado')
+            }else{
+                alert('Aluno reprovado')
+            } */
+
+            var result = (mediaAluno >= media && faltas <=limFaltas) ? 'Aprovado' : 'Reprovado'
+            alert(result)
+
+        </script>
+    </head>
+    <body>
+    
+    </body>
+</html>
