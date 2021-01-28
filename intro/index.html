@@ -1,11 +1,790 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <Title>Variáveis</Title>
-        <meta charset="utf-8">
-        <script src="script.js">string</script>
-    </head>
-    <body>
-        <h1>Variáveis</h1>
-    </body>
+<!doctype html>
+<html lang="pt">
+<head>
+    <!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Libs CSS -->
+
+<link rel="stylesheet" href="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/libs/aos/dist/aos.css">
+<link rel="stylesheet" href="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/libs/flag-icon-css/css/flag-icon.min.css">
+<link rel="stylesheet" href="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/libs/flickity/dist/flickity.min.css">
+<link rel="stylesheet" href="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/libs/flickity-fade/flickity-fade.css">
+<link rel="stylesheet" href="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/libs/highlightjs/styles/vs2015.css">
+<link rel="stylesheet" href="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/libs/jarallax/dist/jarallax.css">
+<link rel="stylesheet" href="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/fonts/feather/feather.css">
+
+<!-- Theme CSS -->
+<!-- build:css @webRoot/assets/css/theme.min.css -->
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/css/theme.min.css">
+<link rel="stylesheet" href="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/css/sans-serif.min.css">
+<!-- endbuild -->
+
+
+<title>idez digital</title>
+
+<link rel="apple-touch-icon" sizes="57x57" href="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/img/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/img/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/img/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/img/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/img/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/img/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/img/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/img/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/img/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/img/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/img/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/img/favicon/favicon-16x16.png">
+<meta name="theme-color" content="#ffffff">
+
+<script src="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/libs/jquery/dist/jquery.min.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154656589-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-154656589-1');
+</script>
+
+<!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '253750218943830');
+    fbq('track', 'PageView');
+</script>
+<noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=253750218943830&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code --></head>
+<body>
+
+<!-- NAVBAR -->
+<style>
+  .navbar-brand svg {
+    height:60px;
+    width:190px;
+    display: block;
+  }
+
+  .navbar-brand svg .a{fill:#c98f55;}
+  .navbar-brand svg .b{fill:#363445;}
+
+  .navbar-dark .navbar-brand svg .b{fill:#f4f4f4;}
+
+
+</style>
+
+<nav class="navbar navbar-expand-md navbar-light bg-light-boxed-right">
+  <div class="container">
+  <div class="mx-auto order-0">
+    <a class="navbar-brand mx-auto" href="https://idez.com.br"><svg xmlns="http://www.w3.org/2000/svg" width="289.097" height="110.35" viewBox="0 0 289.097 110.35"><defs><style>.a{fill:#c98f55}.b{fill:#363445}</style></defs><g transform="translate(0 -0.002)"><g transform="translate(0 0.002)"><path class="a" d="M517.1,9.666h0l-10.6,10.57-10.6,10.57-9.033,9a2.226,2.226,0,0,0,0,3.146h0l7.448,7.423a2.241,2.241,0,0,0,3.156,0l9.028-9,3.763-3.748a2.178,2.178,0,0,1,3.078,0h0l3.753,3.739,9.023,9a2.246,2.246,0,0,0,3.161,0l7.448-7.423a2.227,2.227,0,0,0,0-3.146h0L527.7,30.8l-3.743-3.734a2.182,2.182,0,0,1,0-3.088h0l3.743-3.743,9.033-8.974a2.222,2.222,0,0,0,0-3.142h0L529.286.667a2.236,2.236,0,0,0-3.161,0Z" transform="translate(-248.288 -0.008)"/><path class="a" d="M504.893,11.222a2.212,2.212,0,0,0,0-3.127h0L497.445.652a2.241,2.241,0,0,0-3.156,0l-7.448,7.423a2.222,2.222,0,0,0,0,3.142h0l7.448,7.428a2.231,2.231,0,0,0,3.156,0h0Z" transform="translate(-248.278 -0.002)"/><path class="b" d="M26.728,75.129l-9.346,53.426a1.688,1.688,0,0,1-1.654,1.4H1.624A1.625,1.625,0,0,1,0,128.33a1.439,1.439,0,0,1,.024-.289L9.376,74.61a1.678,1.678,0,0,1,1.654-1.375h14.1a1.62,1.62,0,0,1,1.62,1.62,1.678,1.678,0,0,1-.024.274ZM32.4,42.784,29.957,56.925a1.688,1.688,0,0,1-1.659,1.4H14.215a1.615,1.615,0,0,1-1.625-1.615,1.918,1.918,0,0,1,.024-.289L15.062,42.28a1.683,1.683,0,0,1,1.659-1.4H30.828a1.61,1.61,0,0,1,1.6,1.63A1.727,1.727,0,0,1,32.4,42.784Z" transform="translate(0 -20.877)"/><path class="b" d="M121.063,130.1H107.249a1.63,1.63,0,0,1-1.63-1.62,1.792,1.792,0,0,1,.024-.279h0a1.62,1.62,0,0,0-2.447-1.649c-3.254,2-8.656,4.678-14.191,4.678-12.336,0-19.862-7.658-19.622-21.413C69.8,85.837,82.67,71.8,105.933,71.8a33.143,33.143,0,0,1,7.472.944,1.669,1.669,0,0,0,2.011-1.243.488.488,0,0,0,0-.083l5.1-28.871a1.683,1.683,0,0,1,1.659-1.39h14.1a1.615,1.615,0,0,1,1.625,1.615,1.469,1.469,0,0,1-.024.294L122.7,128.7a1.683,1.683,0,0,1-1.639,1.395Zm-8.221-43.933a1.615,1.615,0,0,0-1.077-1.825,23.342,23.342,0,0,0-6.851-.91c-11.632,0-17.337,10.071-17.558,22.7-.142,8.226,2.936,12.057,9.434,12.057,4.081,0,8.842-2.54,10.589-3.557a1.713,1.713,0,0,0,.817-1.174Z" transform="translate(-35.429 -21.02)"/><path class="b" d="M245.417,135.684a100.677,100.677,0,0,1-15.718,2.2,1.7,1.7,0,0,0-1.585,1.791c.455,6.851,4.507,10.619,12.512,10.619a60.093,60.093,0,0,0,15.61-1.776,1.625,1.625,0,0,1,2,1.13s0,.024,0,.034l2.251,8.9a1.674,1.674,0,0,1-1.155,2.011c-2.97.886-10.276,2.608-22.064,2.608-16.735,0-26.654-8.652-26.385-24.252.367-20.993,11.969-35.458,33.808-35.458,15.321,0,22.451,5.955,22.294,14.749C266.87,125.76,261.507,132.121,245.417,135.684Zm-1.9-21.135c-7.272,0-12.336,4.937-13.892,11.3a1.629,1.629,0,0,0,1.17,1.987,1.649,1.649,0,0,0,.558.044,53.622,53.622,0,0,0,10.124-1.982c6.983-1.987,8.593-4.678,8.627-6.665C250.159,116.11,248.343,114.549,243.518,114.549Z" transform="translate(-107.687 -52.849)"/><path class="b" d="M363.474,121.634c1.165-1.042.9-1.928-.568-1.928H342.633a1.419,1.419,0,0,1-1.468-1.37v-.029l-.318-9.459a1.908,1.908,0,0,1,1.864-1.908l39.984-.029c4.717,0,5.383,7.751,2.618,10.707-3.7,3.949-29.238,29.879-29.238,29.879-1.62,1.742-.352,3.425,1.121,3.425h20.611a1.424,1.424,0,0,1,1.468,1.38v.034l.21,9.464c.024.979-1.253,1.767-2.261,1.767l-41.726-.122c-4.36,0-7.472-5.98-3.861-9.836C334.7,150.329,363.474,121.634,363.474,121.634Z" transform="translate(-168.546 -54.596)"/></g></g></svg></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+  <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+    <ul class="navbar-nav ml-auto">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </ul>
+  </div>
+  </div>
+</nav>
+
+
+<!-- WELCOME -->
+<section class="pt-6 pt-md-10 pb-11 pb-md-13 bg-light-boxed-right">
+    <div class="container-lg">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-sm-12 col-md-6 text-center text-md-left" data-aos="fade-up">
+
+                <!-- Heading -->
+                <h1 class="display-3 mb-4">
+                    Autonomia para <br/>
+                    você oferecer <br/>
+                    <span class="text-primary-light text-underline-primary-light d-md-none d-xl-inline"><span data-typed
+                                                                                                              data-options='{"strings": ["serviços financeiros","conta digital", "cartão de crédito", "empréstimos", "cashback"]}'></span></span><br/>
+                    aos seus clientes.
+                </h1>
+
+                <!-- Text -->
+                <p class="d-md-block d-sm-none ">
+                    Entregamos uma solução completa para você montar o banco digital da sua empresa.
+                </p>
+
+            </div>
+            <div class="col-md-6">
+
+                <!-- Slider -->
+                <div class="position-relative">
+
+                    <!-- Slider -->
+                    <div class="flickity-buttons-adjacent flickity-buttons-bottom-left w-125">
+                        <div class="w-100">
+                            <img class="img-fluid" src="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/img/bg.jpg" style="z-index:10000" alt="..."
+                                 data-aos="fade-left" data-aos-delay="50">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SHAPE -->
+<div class="position-relative">
+    <div class="shape shape-fluid-x shape-top text-white">
+        <div class="shape-img pb-8 pb-md-10">
+            <svg viewBox="0 0 100 50" preserveAspectRatio="none"><path d="M0 0h25l50 25h25v75H0z" fill="currentColor"/></svg>        </div>
+    </div>
+</div>
+
+
+<!-- ABOUT -->
+<section class="pt-10 pt-md-12">
+    <div class="container-lg">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-md-6 col-xl-7">
+
+                <img class="img-fluid" src="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/img/app.png" style="zoom:1.4;" alt="...">
+
+            </div>
+            <div class="col-md-6 col-xl-5 text-center text-md-left">
+
+                <!-- Heading -->
+                <h2 class="display-4 mb-4 mt-sm-6">
+                    A tecnologia que deixa sua empresa um passo a frente
+                </h2>
+
+                <!-- Text -->
+                <p class="text-muted mb-4">
+                    Soluções financeiras com a sua marca e personalizadas de acordo com as suas regras vão fazer seu
+                    negócio decolar.
+                </p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-checked list-checked-warning mb-0">
+                            <li class="mb-3">Cartão VISA</li>
+                            <li class="mb-3">Conta Digital</li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-checked list-checked-warning mb-0">
+                            <li class="mb-3">Aplicativo Mobile</li>
+                            <li class="mb-3">Sistema de Gestão</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="py-10 py-md-12">
+    <div class="container-lg">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-md-6  order-md-1">
+
+                <!-- Image -->
+                <img class="img-fluid mb-6 mb-md-0 flex-fill" src="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/img/cartao.png"
+                     style="position:relative;top:50px;width:100%;z-index: 9999;" alt="...">
+
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-5 order-md-0 text-center text-md-left">
+
+                <!-- Heading -->
+                <h2 class="display-4 mb-6 ">
+                    O que sua empresa ganha com a idez?
+                </h2>
+
+
+                <div class="row">
+                    <div class="col-sm-2 col-12 col-md-auto">
+
+                        <!-- Icon -->
+                        <div class="icon text-primary-light mb-2">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <g fill="none" fill-rule="evenodd">
+                                    <path d="M0 0h24v24H0z"/>
+                                    <path d="M5 19h15a1 1 0 010 2H4a1 1 0 01-1-1V4a1 1 0 112 0v15z" fill="#335EEA"/>
+                                    <path d="M8.73 14.684a1 1 0 11-1.46-1.368l3.75-4a1 1 0 011.38-.077l2.959 2.526 3.856-4.885a1 1 0 011.57 1.24l-4.5 5.7a1 1 0 01-1.434.14l-3.024-2.58-3.097 3.304z"
+                                          fill="#335EEA" opacity=".3"/>
+                                </g>
+                            </svg>
+                        </div>
+
+                    </div>
+                    <div class="col">
+
+                        <!-- Title -->
+                        <p class="font-size-lg font-weight-bold mb-2">Novos Canais de Receita</p>
+
+                        <!-- Text -->
+                        <p class="text-muted mb-5">Você poderá gerar novas formas de receita baseadas em serviços
+                            financeiros.</p>
+
+                    </div>
+                </div>
+
+                <!-- Item -->
+                <div class="row">
+                    <div class="col-sm-2 col-12 col-md-auto">
+
+                        <!-- Icon -->
+                        <div class="icon text-primary-light mb-2">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <g fill="none" fill-rule="evenodd">
+                                    <path d="M0 0h24v24H0z"/>
+                                    <path d="M16.374 19.939l5.849-8.773A.75.75 0 0021.599 10H17V4.477a.75.75 0 00-1.374-.416l-5.849 8.773A.75.75 0 0010.401 14H15v5.523a.75.75 0 001.374.416z"
+                                          fill="#335EEA"/>
+                                    <path d="M4.5 5h5a1.5 1.5 0 010 3h-5a1.5 1.5 0 010-3zm0 12h5a1.5 1.5 0 010 3h-5a1.5 1.5 0 010-3zm-2-6h4a1.5 1.5 0 010 3h-4a1.5 1.5 0 010-3z"
+                                          fill="#335EEA" opacity=".3"/>
+                                </g>
+                            </svg>
+                        </div>
+
+                    </div>
+                    <div class="col">
+
+                        <!-- Title -->
+                        <p class="font-size-lg font-weight-bold mb-2">Escala</p>
+
+                        <!-- Text -->
+                        <p class="text-muted mb-5">Explore novos mercados e escale seu negócio oferecendo para seus
+                            clientes um sistema bancário robusto e 100% digital.</p>
+
+                    </div>
+                </div>
+
+                <!-- Item -->
+                <div class="row">
+                    <div class="col-sm-2 col-12 col-md-auto">
+
+                        <!-- Icon -->
+                        <div class="icon text-primary-light mb-2">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <g fill="none" fill-rule="evenodd">
+                                    <path d="M0 0h24v24H0z"/>
+                                    <rect fill="#335EEA" opacity=".3" x="2" y="5" width="20" height="14" rx="2"/>
+                                    <path fill="#335EEA" d="M2 8h20v3H2z"/>
+                                    <rect fill="#335EEA" opacity=".3" x="16" y="14" width="4" height="2" rx="1"/>
+                                </g>
+                            </svg>
+                        </div>
+
+                    </div>
+                    <div class="col">
+
+                        <!-- Title -->
+                        <p class="font-size-lg font-weight-bold mb-2">
+                            Engajamento e Fidelização
+                        </p>
+
+                        <!-- Text -->
+                        <p class="text-muted mb-0">
+                            Proporcione uma experência incrível para seus clientes através de serviços financeiros
+                            próprios, que reforcem sua marca.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SHAPE -->
+<div class="position-relative" style="z-index:-10">
+    <div class="shape shape-fluid-x shape-top text-light">
+        <div class="shape-img pb-9 pb-md-15">
+            <svg viewBox="0 0 100 50" preserveAspectRatio="none"><path d="M0 25h25L75 0h25v50H0z" fill="currentColor"/></svg>        </div>
+    </div>
+</div>
+
+<!-- FAQ -->
+<section class="pt-8 pt-md-9 bg-light pb-10">
+    <div class="container-lg">
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8">
+
+                <!-- Heading -->
+                <h2 class="display-4 text-center mb-4">
+                    Perguntas Frequentes
+                </h2>
+
+                <!-- Text -->
+                <p class="text-muted text-center mb-9">
+                    Respostas das principais dúvidas relacionadas aos produtos financeiros da idez.
+                </p>
+
+                <!-- Card -->
+                <div class="card rounded-top-left-lg rounded-bottom-right-lg" style="z-index: 1;">
+                    <div class="card-body">
+
+                        <!-- List group -->
+                        <div class="list-group list-group-lg list-group-flush my-n7" id="faq">
+                            <div class="list-group-item">
+
+                                <!-- Heading -->
+                                <a class="collapse-toggle font-size-lg font-weight-bold text-decoration-none text-reset"
+                                   data-toggle="collapse" href="#faqOne" role="button" aria-expanded="false"
+                                   aria-controls="faqOne">
+                                    Quais são as formas de receita para o cliente da Idez?
+                                </a>
+
+                                <!-- Collapse -->
+                                <div class="collapse" id="faqOne" data-parent="#faq">
+                                    <p class="mt-2 mb-0">Com a Idez você poderá definir taxas e tarifas a serem cobradas
+                                        dos correntistas pelo uso das funcionalidades bancárias (PIX, TED, boleto,
+                                        saque, etc).</p>
+                                    <p>Além disso você ganha uma taxa de intercâmbio para toda transação de compra com o
+                                        cartão de crédito e tem retorno na venda de serviços como recarga de celular.
+                                        <br/>Estruturamos um modelo a quatro mãos para garantir que seu modelo de
+                                        negócios será lucrativo.</p>
+                                </div>
+
+                            </div>
+                            <div class="list-group-item">
+
+                                <!-- Heading -->
+                                <a class="collapse-toggle font-size-lg font-weight-bold text-decoration-none text-reset"
+                                   data-toggle="collapse" href="#faqTwo" role="button" aria-expanded="false"
+                                   aria-controls="faqTwo">
+                                    Posso ter um cartão personalizado com a minha identidade visual?
+                                </a>
+
+                                <!-- Collapse -->
+                                <div class="collapse" id="faqTwo" data-parent="#faq">
+                                    <p class="mt-2 mb-0">
+                                        Sim! Queremos assegurar que a experiência do seu cliente seja incrível em todas
+                                        as etapas do processo: da criação do design até a entrega do cartão, nosso time
+                                        tem tudo sob controle.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="list-group-item">
+
+                                <!-- Heading -->
+                                <a class="collapse-toggle font-size-lg font-weight-bold text-decoration-none text-reset"
+                                   data-toggle="collapse" href="#faqThree" role="button" aria-expanded="false"
+                                   aria-controls="faqThree">
+                                    Preciso ter um time técnico para contratar a Idez?
+                                </a>
+
+                                <!-- Collapse -->
+                                <div class="collapse" id="faqThree" data-parent="#faq">
+                                    <p class="mt-2 mb-0">
+                                        Não, você não precisa ter um time técnico. Se você possui uma equipe de
+                                        desenvolvedores e deseja integrar com nossas APIs e plataformas, você poderá
+                                        contar com todo apoio do nosso time, mas ter um time técnico próprio não é um
+                                        requisito. <br/>
+                                        Aliás, esse é o nosso maior objetivo: cuidar da parte técnica e te deixar focado
+                                        no seu negócio.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="list-group-item">
+
+                                <!-- Heading -->
+                                <a class="collapse-toggle font-size-lg font-weight-bold text-decoration-none text-reset"
+                                   data-toggle="collapse" href="#faqFour" role="button" aria-expanded="false"
+                                   aria-controls="faqFour">
+                                    A iDez estará presente no PIX?
+                                </a>
+
+                                <!-- Collapse -->
+                                <div class="collapse" id="faqFour" data-parent="#faq">
+                                    <p class="mt-2 mb-0">
+                                        Sim, nossos clientes terão acesso ao PIX em primeira mão para realizar
+                                        transferencias e pagamentos com agilidade.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SHAPE -->
+<div class="position-relative">
+    <div class="shape shape-fluid-x shape-bottom text-light pb-15 pb-md-10">
+        <div class="shape-img pb-9 pb-md-10">
+            <svg viewBox="0 0 100 50" preserveAspectRatio="none"><path d="M0 0h100v25H75L25 50H0z" fill="currentColor"/></svg>        </div>
+    </div>
+</div>
+
+<!-- TESTIMONIALS -->
+<section class="pt-7 pb-5 bg-dark text-white">
+    <div class="container-lg">
+        <div class="row align-items-center">
+            <div class="col-md-5">
+
+                <!-- Slider -->
+                <div class="position-relative mb-10 mb-md-0">
+
+                    <!-- Decoration -->
+                    <div class="position-absolute bottom-left text-success mb-n9 ml-n5">
+                        <svg width="185" height="186" viewBox="0 0 185 186" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="2" fill="currentColor"/><circle cx="22" cy="2" r="2" fill="currentColor"/><circle cx="42" cy="2" r="2" fill="currentColor"/><circle cx="62" cy="2" r="2" fill="currentColor"/><circle cx="82" cy="2" r="2" fill="currentColor"/><circle cx="102" cy="2" r="2" fill="currentColor"/><circle cx="122" cy="2" r="2" fill="currentColor"/><circle cx="142" cy="2" r="2" fill="currentColor"/><circle cx="162" cy="2" r="2" fill="currentColor"/><circle cx="182" cy="2" r="2" fill="currentColor"/><circle cx="2" cy="22" r="2" fill="currentColor"/><circle cx="22" cy="22" r="2" fill="currentColor"/><circle cx="42" cy="22" r="2" fill="currentColor"/><circle cx="62" cy="22" r="2" fill="currentColor"/><circle cx="82" cy="22" r="2" fill="currentColor"/><circle cx="102" cy="22" r="2" fill="currentColor"/><circle cx="122" cy="22" r="2" fill="currentColor"/><circle cx="142" cy="22" r="2" fill="currentColor"/><circle cx="162" cy="22" r="2" fill="currentColor"/><circle cx="182" cy="22" r="2" fill="currentColor"/><circle cx="2" cy="42" r="2" fill="currentColor"/><circle cx="22" cy="42" r="2" fill="currentColor"/><circle cx="42" cy="42" r="2" fill="currentColor"/><circle cx="62" cy="42" r="2" fill="currentColor"/><circle cx="82" cy="42" r="2" fill="currentColor"/><circle cx="102" cy="42" r="2" fill="currentColor"/><circle cx="122" cy="42" r="2" fill="currentColor"/><circle cx="142" cy="42" r="2" fill="currentColor"/><circle cx="162" cy="42" r="2" fill="currentColor"/><circle cx="182" cy="42" r="2" fill="currentColor"/><circle cx="2" cy="62" r="2" fill="currentColor"/><circle cx="22" cy="62" r="2" fill="currentColor"/><circle cx="42" cy="62" r="2" fill="currentColor"/><circle cx="62" cy="62" r="2" fill="currentColor"/><circle cx="82" cy="62" r="2" fill="currentColor"/><circle cx="102" cy="62" r="2" fill="currentColor"/><circle cx="122" cy="62" r="2" fill="currentColor"/><circle cx="142" cy="62" r="2" fill="currentColor"/><circle cx="162" cy="62" r="2" fill="currentColor"/><circle cx="182" cy="62" r="2" fill="currentColor"/><circle cx="2" cy="82" r="2" fill="currentColor"/><circle cx="22" cy="82" r="2" fill="currentColor"/><circle cx="42" cy="82" r="2" fill="currentColor"/><circle cx="62" cy="82" r="2" fill="currentColor"/><circle cx="82" cy="82" r="2" fill="currentColor"/><circle cx="102" cy="82" r="2" fill="currentColor"/><circle cx="122" cy="82" r="2" fill="currentColor"/><circle cx="142" cy="82" r="2" fill="currentColor"/><circle cx="162" cy="82" r="2" fill="currentColor"/><circle cx="182" cy="82" r="2" fill="currentColor"/><circle cx="2" cy="102" r="2" fill="currentColor"/><circle cx="22" cy="102" r="2" fill="currentColor"/><circle cx="42" cy="102" r="2" fill="currentColor"/><circle cx="62" cy="102" r="2" fill="currentColor"/><circle cx="82" cy="102" r="2" fill="currentColor"/><circle cx="102" cy="102" r="2" fill="currentColor"/><circle cx="122" cy="102" r="2" fill="currentColor"/><circle cx="142" cy="102" r="2" fill="currentColor"/><circle cx="162" cy="102" r="2" fill="currentColor"/><circle cx="182" cy="102" r="2" fill="currentColor"/><circle cx="2" cy="122" r="2" fill="currentColor"/><circle cx="22" cy="122" r="2" fill="currentColor"/><circle cx="42" cy="122" r="2" fill="currentColor"/><circle cx="62" cy="122" r="2" fill="currentColor"/><circle cx="82" cy="122" r="2" fill="currentColor"/><circle cx="102" cy="122" r="2" fill="currentColor"/><circle cx="122" cy="122" r="2" fill="currentColor"/><circle cx="142" cy="122" r="2" fill="currentColor"/><circle cx="162" cy="122" r="2" fill="currentColor"/><circle cx="182" cy="122" r="2" fill="currentColor"/><circle cx="2" cy="142" r="2" fill="currentColor"/><circle cx="22" cy="142" r="2" fill="currentColor"/><circle cx="42" cy="142" r="2" fill="currentColor"/><circle cx="62" cy="142" r="2" fill="currentColor"/><circle cx="82" cy="142" r="2" fill="currentColor"/><circle cx="102" cy="142" r="2" fill="currentColor"/><circle cx="122" cy="142" r="2" fill="currentColor"/><circle cx="142" cy="142" r="2" fill="currentColor"/><circle cx="162" cy="142" r="2" fill="currentColor"/><circle cx="182" cy="142" r="2" fill="currentColor"/><circle cx="2" cy="162" r="2" fill="currentColor"/><circle cx="22" cy="162" r="2" fill="currentColor"/><circle cx="42" cy="162" r="2" fill="currentColor"/><circle cx="62" cy="162" r="2" fill="currentColor"/><circle cx="82" cy="162" r="2" fill="currentColor"/><circle cx="102" cy="162" r="2" fill="currentColor"/><circle cx="122" cy="162" r="2" fill="currentColor"/><circle cx="142" cy="162" r="2" fill="currentColor"/><circle cx="162" cy="162" r="2" fill="currentColor"/><circle cx="182" cy="162" r="2" fill="currentColor"/><circle cx="2" cy="182" r="2" fill="currentColor"/><circle cx="22" cy="182" r="2" fill="currentColor"/><circle cx="42" cy="182" r="2" fill="currentColor"/><circle cx="62" cy="182" r="2" fill="currentColor"/><circle cx="82" cy="182" r="2" fill="currentColor"/><circle cx="102" cy="182" r="2" fill="currentColor"/><circle cx="122" cy="182" r="2" fill="currentColor"/><circle cx="142" cy="182" r="2" fill="currentColor"/><circle cx="162" cy="182" r="2" fill="currentColor"/><circle cx="182" cy="182" r="2" fill="currentColor"/></svg>                    </div>
+
+                    <!-- Slider -->
+                    <div>
+                        <div class="w-100">
+
+                            <!-- Image -->
+                            <img class="w-100 h-auto" style="border:2px solid #f4f4f4;border-radius:4px;"
+                                 src="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/img/dede.jpeg" alt="..." data-aos="fade-up">
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-7 col-xl-6 offset-xl-1 pt-md-12 pb-md-8">
+
+                <!-- Slider -->
+                <div class="flickity-soft-edges">
+                    <div class="col-12" data-aos="fade-up">
+
+                        <!-- Blockquote -->
+                        <blockquote>
+
+                            <!-- Logo -->
+                        
+                        
+                        
+
+                        <!-- Text -->
+                            <p class="h2 text-center mb-8">
+                                “A idez mostra superioridade na tecnologia e tem uma seriedade incrível. Por isso,
+                                confiamos nela para, juntos, criar o BTD Bank”
+                            </p>
+
+                            <!-- Footer -->
+                            <div class="d-flex align-items-center justify-content-center">
+
+                                <!-- Body -->
+                                <div class="ml-4 text-center">
+
+                                    <!-- Title -->
+                                    <p class="font-weight-bold mb-0">
+                                        Carlos André Montenegro
+                                    </p>
+
+                                    <!-- Position -->
+                                    <p class="small  text-white mt-n1 mb-0">
+                                        CEO na BitcoinTrade
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </blockquote>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- SHAPE -->
+<div class="position-relative">
+    <div class="shape shape-fluid-x shape-bottom text-dark pb-5">
+        <div class="shape-img pb-9 pb-md-10">
+            <svg viewBox="0 0 100 50" preserveAspectRatio="none"><path d="M0 0h100v25H75L25 50H0z" fill="currentColor"/></svg>        </div>
+    </div>
+</div>
+
+<!-- CONTACT -->
+<section class="py-10 py-md-12">
+    <div class="container-lg">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+
+                <!-- Heading -->
+                <h2 class="display-3 text-center mb-4 mt-10">
+                    Vamos <span class="text-underline-primary-light">Conversar</span>?
+                </h2>
+
+                <!-- Text -->
+                <p class="text-center text-muted mb-9">
+                    Nosso time quer entender como ajudar a sua empresa a ser mais lucrativa e crescer mais. Conta pra
+                    gente!
+                </p>
+
+                <!-- Form -->
+                <form method="post" action="https://idez.com.br" id="contactForm">
+                    <input type="hidden" name="_token" value="hrS5i8swNvEf9N7QpO4t75sGHQUYmMfgdZy8TUMG">
+                    <div class="form-group">
+                        <label class="sr-only" for="contactName">
+                            Seu Nome
+                        </label>
+                        <input class="form-control" name="name" id="contactName" type="text" placeholder="Seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="contactEmail">
+                            E-mail
+                        </label>
+                        <input class="form-control" name="email" id="contactEmail" type="email"
+                               placeholder="Seu melhor email">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="contactPhone">
+                            Telefone
+                        </label>
+                        <input class="form-control" name="phone" id="contactPhone" type="text" placeholder="Seu telefone celular">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="contactMessage">
+                            Mensagem
+                        </label>
+                        <textarea class="form-control" name="message" id="contactMessage" rows="5"
+                                  placeholder="Como a gente pode trabalhar junto?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-block btn-primary">
+                        Pronto
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-gray-800 border-multicolor">
+    <div class="container-lg">
+        <div class="row align-items-center">
+            <div class="col-12">
+
+                <!-- Divider -->
+                <hr class="border-gray-900 mt-0 mb-8">
+
+            </div>
+            <div class="col-md">
+
+                <!-- Heading -->
+                <h1 class="text-white mb-0">
+                    <span class="text-primary-light">Vamos</span> construir algo juntos?
+                </h1>
+
+                <!-- Text -->
+                <p class="text-white-60 mb-4 mb-md-0">
+                    Em até 30 dias você já pode ter o seu banco, totalmente operacional.
+                </p>
+
+            </div>
+            <div class="col-md-auto">
+
+            </div>
+            <div class="col-12">
+
+                <!-- Divider -->
+                <hr class="border-gray-900 mb-0 mt-8">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer pt-8 pb-4 bg-dark">
+    <div class="container-lg">
+        <div class="row">
+            <div class="col">
+
+                <div class="font-family-serif text-white mb-2" style="display: block;zoom:0.5;overflow: hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="289.097" height="110.35" viewBox="0 0 289.097 110.35"><defs><style>.a{fill:#f4f4f4}.b{fill:#f4f4f4}</style></defs><g transform="translate(0 -0.002)"><g transform="translate(0 0.002)"><path class="a" d="M517.1,9.666h0l-10.6,10.57-10.6,10.57-9.033,9a2.226,2.226,0,0,0,0,3.146h0l7.448,7.423a2.241,2.241,0,0,0,3.156,0l9.028-9,3.763-3.748a2.178,2.178,0,0,1,3.078,0h0l3.753,3.739,9.023,9a2.246,2.246,0,0,0,3.161,0l7.448-7.423a2.227,2.227,0,0,0,0-3.146h0L527.7,30.8l-3.743-3.734a2.182,2.182,0,0,1,0-3.088h0l3.743-3.743,9.033-8.974a2.222,2.222,0,0,0,0-3.142h0L529.286.667a2.236,2.236,0,0,0-3.161,0Z" transform="translate(-248.288 -0.008)"/><path class="a" d="M504.893,11.222a2.212,2.212,0,0,0,0-3.127h0L497.445.652a2.241,2.241,0,0,0-3.156,0l-7.448,7.423a2.222,2.222,0,0,0,0,3.142h0l7.448,7.428a2.231,2.231,0,0,0,3.156,0h0Z" transform="translate(-248.278 -0.002)"/><path class="b" d="M26.728,75.129l-9.346,53.426a1.688,1.688,0,0,1-1.654,1.4H1.624A1.625,1.625,0,0,1,0,128.33a1.439,1.439,0,0,1,.024-.289L9.376,74.61a1.678,1.678,0,0,1,1.654-1.375h14.1a1.62,1.62,0,0,1,1.62,1.62,1.678,1.678,0,0,1-.024.274ZM32.4,42.784,29.957,56.925a1.688,1.688,0,0,1-1.659,1.4H14.215a1.615,1.615,0,0,1-1.625-1.615,1.918,1.918,0,0,1,.024-.289L15.062,42.28a1.683,1.683,0,0,1,1.659-1.4H30.828a1.61,1.61,0,0,1,1.6,1.63A1.727,1.727,0,0,1,32.4,42.784Z" transform="translate(0 -20.877)"/><path class="b" d="M121.063,130.1H107.249a1.63,1.63,0,0,1-1.63-1.62,1.792,1.792,0,0,1,.024-.279h0a1.62,1.62,0,0,0-2.447-1.649c-3.254,2-8.656,4.678-14.191,4.678-12.336,0-19.862-7.658-19.622-21.413C69.8,85.837,82.67,71.8,105.933,71.8a33.143,33.143,0,0,1,7.472.944,1.669,1.669,0,0,0,2.011-1.243.488.488,0,0,0,0-.083l5.1-28.871a1.683,1.683,0,0,1,1.659-1.39h14.1a1.615,1.615,0,0,1,1.625,1.615,1.469,1.469,0,0,1-.024.294L122.7,128.7a1.683,1.683,0,0,1-1.639,1.395Zm-8.221-43.933a1.615,1.615,0,0,0-1.077-1.825,23.342,23.342,0,0,0-6.851-.91c-11.632,0-17.337,10.071-17.558,22.7-.142,8.226,2.936,12.057,9.434,12.057,4.081,0,8.842-2.54,10.589-3.557a1.713,1.713,0,0,0,.817-1.174Z" transform="translate(-35.429 -21.02)"/><path class="b" d="M245.417,135.684a100.677,100.677,0,0,1-15.718,2.2,1.7,1.7,0,0,0-1.585,1.791c.455,6.851,4.507,10.619,12.512,10.619a60.093,60.093,0,0,0,15.61-1.776,1.625,1.625,0,0,1,2,1.13s0,.024,0,.034l2.251,8.9a1.674,1.674,0,0,1-1.155,2.011c-2.97.886-10.276,2.608-22.064,2.608-16.735,0-26.654-8.652-26.385-24.252.367-20.993,11.969-35.458,33.808-35.458,15.321,0,22.451,5.955,22.294,14.749C266.87,125.76,261.507,132.121,245.417,135.684Zm-1.9-21.135c-7.272,0-12.336,4.937-13.892,11.3a1.629,1.629,0,0,0,1.17,1.987,1.649,1.649,0,0,0,.558.044,53.622,53.622,0,0,0,10.124-1.982c6.983-1.987,8.593-4.678,8.627-6.665C250.159,116.11,248.343,114.549,243.518,114.549Z" transform="translate(-107.687 -52.849)"/><path class="b" d="M363.474,121.634c1.165-1.042.9-1.928-.568-1.928H342.633a1.419,1.419,0,0,1-1.468-1.37v-.029l-.318-9.459a1.908,1.908,0,0,1,1.864-1.908l39.984-.029c4.717,0,5.383,7.751,2.618,10.707-3.7,3.949-29.238,29.879-29.238,29.879-1.62,1.742-.352,3.425,1.121,3.425h20.611a1.424,1.424,0,0,1,1.468,1.38v.034l.21,9.464c.024.979-1.253,1.767-2.261,1.767l-41.726-.122c-4.36,0-7.472-5.98-3.861-9.836C334.7,150.329,363.474,121.634,363.474,121.634Z" transform="translate(-168.546 -54.596)"/></g></g></svg>                </div>
+
+            </div>
+            <div class="col">
+                <h3 class="text-white font-size-lg mb-4" style="zoom:1.1;letter-spacing: 1px">
+                    Atendimento
+                </h3>
+
+                <dl class="list-unstyled text-white">
+
+                    <dt class="text-uppercase mt-4 font-size-sm">E-mail</dt>
+                    <dd class="font-size-sm text-white-80">suporte@idez.com.br</dd>
+
+                    <dt class="text-uppercase mt-4 font-size-sm">Telefone</dt>
+                    <dd class="font-size-sm text-white-80">(55) 98117-1818</dd>
+
+                    <dd class="font-size-sm text-white"></dd>
+                </dl>
+
+            </div>
+            <div class="col">
+                <h3 class="text-white font-size-lg mb-4" style="zoom:1.1;letter-spacing: 1px">
+                    Políticas
+                </h3>
+
+                <ul class="list-unstyled">
+                    <li class="mt-1" >
+                        <a class="text-white-80 font-size-sm" href="https://idez.com.br/termos">Termos de Uso</a>
+                    </li>
+                    <li class="mt-1" >
+                        <a class="text-white-80 font-size-sm" href="https://idez.com.br/privacidade">Privacidade</a>
+                    </li>
+                    <li class="mt-1">
+                        <a class="text-white-80 font-size-sm" href="https://idez.com.br/kyc">Política de KYC</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-2">
+                <h3 class="text-white font-size-lg mb-4" style="zoom:1.1;letter-spacing: 1px">
+                    Baixe o App
+                </h3>
+
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <a class="text-white-60" href="https://apps.apple.com/br/app/idez-digital/id1488467031" target="_blank"><img class="img-fluid" src="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/img/buttons/button-app.png" /></a>
+                    </li>
+                    <li class="mb-3">
+                        <a class="text-white-60" href="https://play.google.com/store/apps/details?id=br.com.idezdigital.idez&hl=pt_BR" target="_blank"><img class="img-fluid" src="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/img/buttons/button-play.png" /></a>
+                    </li>
+
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+    <hr class="bg-white" style="opacity:0.3" />
+    <div class="container-lg">
+        <div class="row align-items-center">
+            <small class="col text-white-60 text-center" style="zoom:0.75;">
+                © 2020. Todos os direitos reservados. CNPJ: 33.652.365/0001-50 <br />
+                Av. das Américas 2480, Barra da Tijuca, Rio de Janeiro - RJ, 22640-101, Brasil.
+            </small>
+        </div>
+    </div>
+</footer>
+
+<!-- JAVASCRIPT -->
+<!-- Libs JS -->
+<script src="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+<script src="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/libs/@popperjs/core/dist/umd/popper.min.js"></script>
+<script src="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/libs/aos/dist/aos.js"></script>
+<script src="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/libs/flickity/dist/flickity.pkgd.min.js"></script>
+<script src="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/libs/flickity-fade/flickity-fade.js"></script>
+<script src="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/libs/jarallax/dist/jarallax.min.js"></script>
+<script src="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/libs/jarallax/dist/jarallax-element.min.js"></script>
+<script src="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+<script src="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/libs/typed.js/lib/typed.min.js"></script>
+
+<!-- Theme JS -->
+<!-- build:js @webRoot/assets/js/theme.min.js -->
+<script src="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/js/aos.js"></script>
+<script src="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/js/card-stack.js"></script>
+<script src="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/js/countup.js"></script>
+<script src="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/js/fancybox.js"></script>
+<script src="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/js/flickity.js"></script>
+<script src="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/js/modal.js"></script>
+<script src="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/js/navbar.js"></script>
+<script src="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/js/navbar-dropdown.js"></script>
+<script src="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/js/password.js"></script>
+<script src="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/js/popovers.js"></script>
+<script src="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/js/price.js"></script>
+<script src="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/js/prices.js"></script>
+<script src="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/js/smooth-scroll.js"></script>
+<script src="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/js/svgshim.js"></script>
+<script src="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/js/table.js"></script>
+<script src="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/js/table-features.js"></script>
+<script src="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/js/tooltips.js"></script>
+<script src="https://d1677r5khpp8f8.cloudfront.net/c1c60117-52c1-49e3-a8e9-b250379e2dfe/js/typed.js"></script>
+<!-- endbuild -->
+</body>
 </html>
