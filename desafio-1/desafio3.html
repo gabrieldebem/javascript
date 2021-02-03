@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio III - Calculo de IMC</title>
+    <script>
+        let name = prompt('Informe seu nome')
+        let alt = prompt('Informe sua altura em centimetros')
+        let peso = prompt('Informe seu peso em quilogramas')
+        alt = parseFloat(alt)
+        peso = parseFloat(peso)
+        let cFnl = null
+        let mAlt = alt / 100
+
+        const imc = peso / (mAlt*mAlt)
+        if (imc < 16) {
+            cFnl = 'Peso baixo muito grave'
+        }else if(imc >= 16 && imc <= 16.99){
+            cFnl = 'Peso baixo grave'
+        }if(imc >= 17 && imc <= 18.49){
+            cFnl = 'Baixo Peso'
+        }if(imc >= 18.5 && imc <= 24.99){
+            cFnl = 'Peso normal'
+        }if(imc >= 25 && imc <= 29.99){
+            cFnl = 'Sobrepeso'
+        }if(imc >= 30 & imc <= 34.99){
+            cFnl = 'Obesidade grau I'
+        }if(imc >= 35 && imc <= 39.99){
+            cFnl = 'Obesidade grau II'
+        }if(imc >= 40){
+            cFnl = 'Obesidade grau III'
+        }
+        document.write(name + ' possui indice de massa corporal igual à ' + imc + ', sendo classificado como: ' + cFnl)
+</script>
+</head>
+<body>
+    
+</body>
+</html>
