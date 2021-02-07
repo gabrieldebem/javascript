@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <script src="fAnonima.js"></script>
 </head>
 <body>
-    
+    <form action="func.js" method="POST">
+       <label for="name">Nome:</label>
+       <input type="text" id="name" name="user-name"> <br>
+       <label for="alt">Altura em centímetros</label>
+       <input type="number" id="alt" name="user-altura"> <br>
+       <label for="pes">Peso em quilogramas:</label>
+       <input type="number" id="pes" name="user-peso"> <br>
+       <button type="submit">Calcule o IMC</button>
+    </form>
 </body>
 </html>

@@ -31,8 +31,8 @@ function calcImc(alt, pes){
 }
 // Ou poderia declarar uma variavel simples, inves de fazer a função
 //let imc = pes / (alt *alt)
-let alt = 1.70
-let pes = 120
+let alt = document.getElementById('alt')
+let pes = document.getElementById('pes')
 
 //quando for chamar a função, como o exemplo abaixo, é preciso declarar os 
 //valores das suas variaveis, ou as váriaveis que contem esse valor
@@ -49,4 +49,4 @@ function calcFinal(imc){
      if(imc >= 40) return 'Obesidade grau III'
         
 }
-console.log(calcFinal(imc))
+postMessage(calcFinal(imc))
